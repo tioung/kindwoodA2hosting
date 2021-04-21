@@ -209,6 +209,10 @@ html{
   position: relative;
 }
 
+.last-menu-link{
+  font-size: 2.5rem;
+}
+
 .menu-link::before{
   content: attr(data-content);
   position: absolute;
@@ -230,7 +234,9 @@ html{
   bottom: 3rem;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .social-media i{
@@ -249,4 +255,15 @@ html{
 
 .social-media i:hover{
   background-color: #c29525;
+}
+
+.social-media img{
+  width:22%;
+  height: 1.7rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.social-media img:hover{
+  opacity: 0.7;
 }
