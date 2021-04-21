@@ -313,10 +313,14 @@ html{
     }
 }
 
+.carousel-item{
+  width:100%;
+  height:100%;
+}
 .carousel .carousel-item img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 100%;
+    object-fit:cover
 }
 
 .carousel .carousel-actions {
@@ -330,13 +334,20 @@ html{
 
 .carousel .carousel-actions button {
     border-radius: 50px;
-    background-color: white;
+    background-color: #fff;
+    color: #222;
     border: 0;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     width: 40px;
     height: 40px;
+    transition: all 0.2s;
+}
+
+.carousel .carousel-actions button:hover {
+  background-color: #222;
+  color: #fff;
 }
 
 .carousel .carousel-actions button.carousel-button-prev {
