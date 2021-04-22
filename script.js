@@ -55,6 +55,20 @@ mainImg.addEventListener('click',()=>{
   carousel.style.animation=''
 })
 
-
-
-//NEXT
+//BOIS COMPOSITE
+const play=document.querySelector('.play-audio')
+const audioKindwood=document.querySelector('.audio-kindwood')
+let start=true
+audioKindwood.addEventListener("ended", function(){
+    start=true
+})
+play.addEventListener('click',()=>{
+    if(start){
+        audioKindwood.currentTime=0
+        audioKindwood.play()
+        start=false
+    }else{
+        audioKindwood.pause()
+        start=true
+    }
+})
