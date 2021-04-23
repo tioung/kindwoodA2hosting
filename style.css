@@ -481,6 +481,7 @@ x@keyframes fadeOut {
     margin-bottom: 6rem;
 }
 .bois-roches h2{
+    font-family: 'Baloo Da 2', serif;
     font-size: 5rem;
     color:#333;
     text-transform: uppercase;
@@ -501,7 +502,8 @@ x@keyframes fadeOut {
     padding: 3em 2em;
 }
 .col h3{
-    font-size: 3rem;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.5rem;
     color:#444;
     text-transform: uppercase;
     margin-top: 0em;
@@ -509,6 +511,7 @@ x@keyframes fadeOut {
     opacity: 0.8;
 }
 .col p{
+    font-family: 'Mulish', serif;
     font-size: 2.2rem;
     color: #555;
     letter-spacing: 1.5px;
@@ -575,6 +578,56 @@ span.highlight{
   height:300px;
   max-height: 90vw;
   margin: 1rem;
+}
+
+section.map{
+  width:100%;
+  /* height:100vh; */
+  background-color: rgba(250,250,250,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13rem 0;
+}
+
+.map-wrapper{
+  background-color: #fff;
+  display: flex;
+}
+.map-wrapper *{
+  margin:1rem;
+}
+
+.map-wrapper h2{
+  font-family: 'Baloo Da 2', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+.map-wrapper p{
+  font-family: 'Mulish', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+.iframe-wrapper{
+  width:472px;
+  max-width:80vw;
+  height:354px;
+  max-height: 60vw;
+}
+
+iframe{
+  width:100%;
+  height:100%;
+}
+
+.map-ltk iframe{
+  opacity: 0;
 }
 
 /* MEDIA QUERIES*/
@@ -661,6 +714,9 @@ span.highlight{
   .bois-roches .title{
       margin-bottom: 3rem;
   }
+  .map-wrapper{
+    flex-direction: column;
+  }
 }
 
 @media(max-width:700px){
@@ -716,6 +772,9 @@ span.highlight{
   }
   .play-audio{
       transform: scale(0.8);
+  }
+  section.map{
+    padding: 7rem 0;
   }
 }
 
