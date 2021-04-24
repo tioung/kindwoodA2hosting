@@ -630,6 +630,53 @@ iframe{
   opacity: 0;
 }
 
+.contact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  padding: 3rem 5rem;
+  background-color: rgba(250,250,250,0.8);
+  color: #777;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-form h2{
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+}
+.contact-form h3{
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+}
+.contact-details{
+  padding: 1rem 0 3rem;
+  border: 1px solid #f1f1f1;
+  background-color: rgba(251,251,251,1);
+  margin: 2rem auto;
+}
+.contact-details *{
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+.contact-form .tel,
+.contact-form .email{
+  line-height: 0;
+  margin-top: 3rem;
+}
+.contact-details p:last-child{
+  text-transform: lowercase;
+}
+
 /* MEDIA QUERIES*/
 @media(max-width:1400px){
   .banner h1{
