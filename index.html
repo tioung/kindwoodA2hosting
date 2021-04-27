@@ -187,19 +187,21 @@
 
             <!-- CONTACT -->
             <section class="contact" id='contact'>
-              <form action="#" class="contact-form">
-                <h2>kindwood</h2>
-                <h3>Beau Bassin</h3>
-                <h3>La Tour Koenig</h3>
-                <div class="contact-details">
-                  <p class='tel'>Tel:</p>
-                  <p>5257 9998</p>
-                  <p>5758 1195</p>
-                  <p class='email'>Email:</p>
-                  <p>info.kindwood@gmail.com</p>
+              <form class="contact-form">
+                <div class="input-fields">
+                  <input type="text" class="input" name='name' placeholder="Name">
+                  <input type="email" class="input" name='email' required placeholder="Email Address">
+                  <input type="text" class="input" name='telephone' placeholder="Telephone">
+                  <input type="text" class="input" name='subject' placeholder="Subject">
                 </div>
+                <div class="msg">
+                  <textarea name='message' required placeholder="Message"></textarea>
+                  <button class="btn">Send</button>
+                </div>
+
               </form>
-            </section> <!--end of contact -->
+            </section>
+            <!--end of contact -->
 
             <!-- MAP -->
             <section class="map" id="map">
@@ -224,6 +226,7 @@
 
 
   </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
