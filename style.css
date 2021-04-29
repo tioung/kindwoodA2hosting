@@ -488,8 +488,8 @@ x@keyframes fadeOut {
     letter-spacing: 3px;
     opacity: 0.8;
 }
-.cols{
-    width:80%;
+.bois-roches .cols{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -528,8 +528,8 @@ span.highlight{
     letter-spacing: 0;
 }
 
-.pics{
-    width:60%;
+#bois-composite .pics{
+    width:90%;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -538,14 +538,14 @@ span.highlight{
 }
 .pic-wrapper{
     width:20%;
-    height: 150px;
+    height: 200px;
     margin:0.4rem;
     /* border-radius: 1rem; */
     opacity: 0.9;
     transition: all 0.2s;
 }
 .pic-wrapper:hover{
-    transform: scale(1.7);
+    transform: scale(1.4);
     opacity: 1;
     z-index:300;
 }
@@ -566,18 +566,18 @@ span.highlight{
 }
 
 .roches-pics{
-  width: 70%;
+  width: 80%;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .roches-pics img{
-  width:300px;
+  width:283px;
   max-width: 90vw;
-  height:300px;
+  height:282px;
   max-height: 90vw;
-  margin: 1rem;
+  margin: 0.2rem;
 }
 
 section.map{
@@ -774,8 +774,9 @@ iframe{
   .description p:last-child{
     font-size: 3rem;
   }
-  .pics{
-      width:70%;
+  .pic-wrapper{
+      height: 160px;
+      /* margin:0.3rem; */
   }
 }
 
@@ -805,7 +806,7 @@ iframe{
     flex-direction: row;
     justify-content: center;
   }
-  .cols{
+  .bois-roches .cols{
     flex-direction: column;
   }
   .bois-roches h2{
@@ -818,12 +819,11 @@ iframe{
     font-size: 1.9rem;
     letter-spacing: 1px;
   }
-  .pics{
-      width:80%;
+  #bois-composite .pics{
       padding: 2rem;
   }
   .pic-wrapper{
-      height: 130px;
+      height: 120px;
       margin:0.3rem;
   }
   .bois-roches{
@@ -874,12 +874,11 @@ iframe{
     letter-spacing: 0.3px;
     line-height: 1.35;
   }
-  .pics{
-      width:90%;
+  #bois-composite .pics{
       padding: 1rem;
   }
   .pic-wrapper{
-      height: 110px;
+      height: 90px;
       margin:0.2rem;
   }
   .bois-roches{
@@ -912,7 +911,7 @@ iframe{
     visibility: hidden;
   }
   .pic-wrapper{
-      height: 80px;
+      height: 70px;
       margin:0.2rem;
   }
   .bois-roches{
@@ -927,7 +926,7 @@ iframe{
 }
 @media(max-width:400px){
   .pic-wrapper{
-      height: 60px;
+      height: 50px;
   }
   .play-audio{
       transform: scale(0.6);
