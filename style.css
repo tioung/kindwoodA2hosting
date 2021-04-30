@@ -536,7 +536,7 @@ span.highlight{
     padding: 3rem;
     border-radius: 0.5rem;
 }
-.pic-wrapper{
+.bois-pic-wrapper{
     width:20%;
     height: 200px;
     margin:0.4rem;
@@ -544,12 +544,12 @@ span.highlight{
     opacity: 0.9;
     transition: all 0.2s;
 }
-.pic-wrapper:hover{
+.bois-pic-wrapper:hover{
     transform: scale(1.4);
     opacity: 1;
     z-index:300;
 }
-.pic-wrapper img{
+.bois-pic-wrapper img{
     width:100%;
     height:100%;
     object-fit: cover;
@@ -566,18 +566,23 @@ span.highlight{
 }
 
 .roches-pics{
-  width: 80%;
+  width: 90%;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.roches-pics img{
-  width:283px;
-  max-width: 90vw;
-  height:282px;
-  max-height: 90vw;
-  margin: 0.2rem;
+.roches-pic-wrapper{
+  width:25%;
+  height:300px;
+  padding: 0.2rem;
+}
+
+.roches-pic-wrapper img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  vertical-align: top;
 }
 
 section.map{
@@ -774,9 +779,15 @@ iframe{
   .description p:last-child{
     font-size: 3rem;
   }
-  .pic-wrapper{
+  .bois-pic-wrapper{
       height: 160px;
       /* margin:0.3rem; */
+  }
+}
+
+@media(max-width:1200px){
+  .roches-pic-wrapper{
+    height:250px;
   }
 }
 
@@ -822,7 +833,7 @@ iframe{
   #bois-composite .pics{
       padding: 2rem;
   }
-  .pic-wrapper{
+  .bois-pic-wrapper{
       height: 120px;
       margin:0.3rem;
   }
@@ -834,6 +845,9 @@ iframe{
   }
   .map-wrapper{
     flex-direction: column;
+  }
+  .roches-pic-wrapper{
+    height:200px;
   }
 }
 
@@ -877,7 +891,7 @@ iframe{
   #bois-composite .pics{
       padding: 1rem;
   }
-  .pic-wrapper{
+  .bois-pic-wrapper{
       height: 90px;
       margin:0.2rem;
   }
@@ -892,6 +906,16 @@ iframe{
   }
   section.map{
     padding: 7rem 0;
+  }
+  .roches-pic-wrapper{
+    height:150px;
+  }
+}
+
+@media(max-width:600px){
+  .roches-pic-wrapper{
+    width:50%;
+    height:275px;
   }
 }
 
@@ -910,7 +934,7 @@ iframe{
     opacity: 0;
     visibility: hidden;
   }
-  .pic-wrapper{
+  .bois-pic-wrapper{
       height: 70px;
       margin:0.2rem;
   }
@@ -923,12 +947,25 @@ iframe{
   .play-audio{
       transform: scale(0.7);
   }
+  .roches-pic-wrapper{
+    height:225px;
+  }
+
 }
 @media(max-width:400px){
-  .pic-wrapper{
+  .bois-pic-wrapper{
       height: 50px;
   }
   .play-audio{
       transform: scale(0.6);
+  }
+  .roches-pic-wrapper{
+    width: 100%;
+    height:350px;
+  }
+}
+@media(max-width:320px){
+  .roches-pic-wrapper{
+    height:280px;
   }
 }
