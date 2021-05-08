@@ -523,7 +523,8 @@ span.highlight{
   width: 100%;
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding:1em;
+  background-color: rgba(250,250,250,0.5);
 }
 
 .bois-roches-pics .pic-wrapper{
@@ -783,13 +784,15 @@ iframe{
     font-size: 3rem;
   }
   .bois-roches-pics .pic-wrapper{
-    height:250px;
+    width:33.3333%;
+    height:350px;
+    padding: 0.2rem;
   }
 }
 
 @media(max-width:1200px){
   .bois-roches-pics .pic-wrapper{
-    height:220px;
+    height:300px;
   }
 }
 
@@ -836,7 +839,8 @@ iframe{
       font-size: 2.0rem;
   }
   .bois-roches-pics .pic-wrapper{
-    height:200px;
+    width:50%;
+    height:320px;
   }
 }
 
@@ -881,7 +885,7 @@ iframe{
       font-size: 1.8rem;
   }
   .bois-roches-pics .pic-wrapper{
-    height:150px;
+    height:270px;
   }
   .main-sections{
       padding: 1rem 6rem;
@@ -896,7 +900,8 @@ iframe{
 
 @media(max-width:600px){
   .bois-roches-pics .pic-wrapper{
-    height:100px;
+    width:100%;
+    height:400px;
   }
 }
 
@@ -918,12 +923,20 @@ iframe{
   .play-audio{
       transform: scale(0.7);
   }
+  .bois-roches-pics .pic-wrapper{
+    height:350px;
+  }
 }
 @media(max-width:400px){
   .play-audio{
       transform: scale(0.6);
   }
   .bois-roches-pics .pic-wrapper{
-    height:80px;
+    height:250px;
+  }
+}
+@media(max-width:300px){
+  .bois-roches-pics .pic-wrapper{
+    height:220px;
   }
 }
