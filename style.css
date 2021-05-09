@@ -940,3 +940,15 @@ iframe{
     height:220px;
   }
 }
+
+/* lANDSCAPE MEDIA QUERIES */
+@media(max-width:840px) and (orientation: lANDSCAPE){
+  html{
+    font-size: 7px;
+  }
+}
+@media(max-width:740px) and (orientation: lANDSCAPE){
+  html{
+    font-size: 6px;
+  }
+}
