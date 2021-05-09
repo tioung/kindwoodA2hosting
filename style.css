@@ -844,6 +844,14 @@ iframe{
   }
 }
 
+@media(max-width:824px){
+  .carousel .carousel-actions button {
+      font-size: 15px;
+      width: 25px;
+      height: 25px;
+  }
+}
+
 @media(max-width:700px){
   .banner h1{
     font-size: 4rem;
@@ -858,8 +866,8 @@ iframe{
   .img-info{
       top:15%;
       transform: translateY(0);
-      left:15%;
-      max-width: 69%;
+      /* left:15%;
+      /* max-width: 69%; */
       padding: 0 0.5rem;
   }
   .img-info h2{
@@ -870,6 +878,18 @@ iframe{
   }
   .description p:last-child{
     font-size: 2rem;
+  }
+  .carousel .carousel-actions button {
+      font-size: 12px;
+      width: 20px;
+      height: 20px;
+  }
+  .carousel .carousel-actions button.carousel-button-prev {
+      margin-left: 10px;
+  }
+
+  .carousel .carousel-actions button.carousel-button-next {
+      margin-right: 10px;
   }
   .main-sections h2{
     font-size: 3rem;
@@ -938,6 +958,17 @@ iframe{
 @media(max-width:300px){
   .bois-roches-pics .pic-wrapper{
     height:220px;
+  }
+  .carousel .carousel-actions button {
+      font-size: 10px;
+      width: 15px;
+      height: 15px;
+  }
+  .carousel .carousel-actions button.carousel-button-prev {
+      margin-left: 5px;
+  }
+  .carousel .carousel-actions button.carousel-button-next {
+      margin-right: 5px;
   }
 }
 
