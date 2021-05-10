@@ -850,6 +850,16 @@ iframe{
       width: 25px;
       height: 25px;
   }
+  .main-sections{
+      padding-left: 3rem;
+      padding-right: 3rem;
+  }
+  .cols{
+    padding: 0em;
+  }
+  .col{
+      padding: 2em 1.5em;
+  }
 }
 
 @media(max-width:700px){
@@ -907,11 +917,8 @@ iframe{
   .bois-roches-pics .pic-wrapper{
     height:270px;
   }
-  .main-sections{
-      padding: 0rem 6rem;
-  }
   #bois-composite{
-      padding: 1rem 6rem 0rem;
+      padding: 1rem 3rem 0rem;
   }
   .main-sections .title{
     margin-bottom: 0.5rem;
@@ -951,6 +958,11 @@ iframe{
   }
 }
 @media(max-width:400px){
+  .main-sections,
+  #bois-composite{
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
   .play-audio{
       transform: scale(0.6);
   }
