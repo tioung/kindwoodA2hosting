@@ -908,10 +908,13 @@ iframe{
     height:270px;
   }
   .main-sections{
-      padding: 1rem 6rem;
+      padding: 0rem 6rem;
+  }
+  #bois-composite{
+      padding: 1rem 6rem 0rem;
   }
   .main-sections .title{
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
   }
   .play-audio{
       transform: scale(0.8);
@@ -955,7 +958,19 @@ iframe{
     height:250px;
   }
 }
-@media(max-width:300px){
+@media(max-width:350px){
+  .play-audio{
+      transform: scale(0.4);
+  }
+  .main-sections h2{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:320px){
+  .main-sections h2{
+    font-size: 1.5rem;
+  }
   .bois-roches-pics .pic-wrapper{
     height:220px;
   }
