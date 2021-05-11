@@ -531,7 +531,7 @@ span.highlight{
 .bois-roches-pics .pic-wrapper{
   width:25%;
   height:300px;
-  padding: 0.2rem;
+  padding: 0.5rem;
 }
 
 .bois-roches-pics .pic-wrapper img{
@@ -685,7 +685,7 @@ span.highlight{
 .map{
   width:100%;
 }
-.map h2{
+.main-sections .map h2{
   font-family: 'Baloo Da 2', serif;
   font-size: 3rem;
   font-weight: 300;
@@ -693,7 +693,7 @@ span.highlight{
   line-height: 1;
   text-align: center;
 }
-.map p{
+.main-sections .map p{
   font-family: 'Mulish', serif;
   font-size: 2rem;
   font-weight: 300;
@@ -705,7 +705,6 @@ span.highlight{
   width:472px;
   max-width:95%;
   height:354px;
-  max-height: 60vw;
   margin: 1rem auto;
 }
 
@@ -787,7 +786,7 @@ iframe{
   .bois-roches-pics .pic-wrapper{
     width:33.3333%;
     height:350px;
-    padding: 0.2rem;
+    padding: 0.5rem;
   }
 }
 
@@ -843,6 +842,9 @@ iframe{
     width:50%;
     height:320px;
   }
+  .maps{
+    padding: 4rem 0;
+  }
 }
 
 @media(max-width:824px){
@@ -852,11 +854,11 @@ iframe{
       height: 25px;
   }
   .main-sections{
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding: 6rem 3rem 0;
   }
   .cols{
     padding: 0em;
+    margin-bottom: 4rem;
   }
   .col{
       padding: 2em 1.5em;
@@ -918,7 +920,7 @@ iframe{
   .bois-roches-pics .pic-wrapper{
     height:270px;
   }
-  #bois-composite{
+  .main-sections{
       padding: 1rem 3rem 0rem;
   }
   .main-sections .title{
@@ -926,6 +928,9 @@ iframe{
   }
   .play-audio{
       transform: scale(0.8);
+  }
+  .maps{
+    padding: 2rem 0;
   }
 }
 
@@ -959,8 +964,7 @@ iframe{
   }
 }
 @media(max-width:400px){
-  .main-sections,
-  #bois-composite{
+  .main-sections{
       padding-left: 1rem;
       padding-right: 1rem;
   }
