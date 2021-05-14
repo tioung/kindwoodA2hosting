@@ -563,38 +563,52 @@ span.highlight{
 
 /* CONTACT */
 .contact{
+  font-family: 'Mulish', serif;
   width:100%;
-  padding: 8rem 0;
+  padding: 8rem;
   background-color:  rgba(250,250,250,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form{
-  max-width: 550px;
-  margin: 0 auto;
+  width: 550px;
   background: #fff;
   padding: 30px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  box-shadow:0 0 10px rgba(0,0,0,0.13)
+  box-shadow:0 0 10px rgba(0,0,0,0.13);
 }
 
 .contact-details{
-  width:100%;
-  font-size: 1.3rem;
+  color: #fff;
   background: rgba(57,183,221,1);
   letter-spacing: 1px;
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
+  flex-direction: column;
+  padding: 30px;
   border-radius: 5px;
-  color: #fff;
+  box-shadow:0 0 10px rgba(0,0,0,0.13);
   border: none;
+  margin: 2rem;
+}
+.contact-details h2{
+  font-size: 2rem;
+  color: #fff;
+}
+.contact-details .contact-store{
+  margin-bottom: 1rem;
+}
+.contact-store h3{
+  font-size: 1.4rem;
+}
+.contact-store p{
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
 .contact-cols{
     display: flex;
-    /* width: 100%; */
 }
 
 .input-fields{
@@ -610,6 +624,7 @@ span.highlight{
 
 .input-fields .input,
 .msg textarea{
+  font-family: 'Mulish', serif;
   margin: 10px 0;
   background: transparent;
   border: 0;
@@ -637,6 +652,7 @@ span.highlight{
 }
 
 .msg .btn{
+  font-family: 'Mulish', serif;
   letter-spacing: 1px;
   width:100%;
   background: #39b7dd;
@@ -649,38 +665,37 @@ span.highlight{
   border: none;
 }
 
-@media (max-width:800px){
+@media (max-width:1100px){
   .contact{
-    padding: 2rem;
-    background-color:  #fff;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .contact-details{
+    width: 550px;
+    text-align: center;
   }
 }
 
-@media (max-width:600px){
+@media (max-width:650px){
+  .contact{
+    padding:3rem 0;
+  }
+  .contact-details,
+  .contact-form{
+    max-width:95%;
+  }
   .contact-cols{
     flex-direction: column;
-  }
-  .msg textarea{
-    height: 120px;
   }
   .input-fields,
   .msg{
     width: 100%;
   }
-  .contact{
-      padding: 0;
-  }
 }
 
 @media (max-width:475px){
-  .contact-details{
-      flex-direction: column;
-  }
-  .contact-details p{
-    margin: 0.5rem 0;
-  }
   .contact{
-      padding: 2rem 0 3rem;
+    padding:1rem 0;
   }
 }
 
